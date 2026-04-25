@@ -8,12 +8,16 @@ exchange_rate = float(input("금일 엔화 환율을 입력하세요 (예:9.1): 
 flight_fee = int(input("항공권 결제 금액(KRW)를 입력하세요: "))
 stay_months = int(input("일본에 체류할 예정인 개월 수를 입력하세요: "))
 
+
 total_jpy = (budget_krw - flight_fee) / exchange_rate
+
+visa_fee = 150000
+total_jpy -= visa_fee
 
 print("-"*40)
 print(f"{name}님의 워홀 초기 비용 분석입니다!")
 print(f"보유원화:{budget_krw}원, 적용 환율{exchange_rate}")
-print(f"항공료 제외,일본에서 사용할수 있는 총 엔화는 {total_jpy:.2f}엔입니다.")
+print(f"항공료&비 제외,일본에서 사용할수 있는 총 엔화는 {total_jpy:.0f}엔입니다.")
 print("-"*40)
 
 #
