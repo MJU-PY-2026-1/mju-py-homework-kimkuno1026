@@ -17,7 +17,7 @@ total_jpy -= visa_fee
 print("-"*40)
 print(f"{name}님의 워홀 초기 비용 분석입니다!")
 print(f"보유원화:{budget_krw}원, 적용 환율{exchange_rate}")
-print(f"항공료&비 제외,일본에서 사용할수 있는 총 엔화는 {total_jpy:.0f}엔입니다.")
+print(f"항공료&비자 제외,일본에서 사용할수 있는 총 엔화는 {total_jpy:.0f}엔입니다.")
 print("-"*40)
 
 #
@@ -36,10 +36,10 @@ print(f"현재 등록된 지출 관리 항목({list_count}개):{expense_items}")
 print("-"*40)
 
 #예산 등급 판정
-if total_jpy >= 3000000:
+if total_jpy >= 300000:
   grade = "안정"
   msg = "한 달 이상 수입 없이도 안정적으로 생활하며 일자리를 고를 수 있습니다"
-elif total_jpy >= 2000000:
+elif total_jpy >= 200000:
   grade = "보통"
   msg = "평범한 수준입니다.한달 이내에 아르바이트를 구하는것이 좋습니다"
 else :
