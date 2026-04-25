@@ -73,8 +73,8 @@
     * **해결:** 들여쓰기의 위치를 확인하지않았음,중첩에서는 특히 들여쓰기를 신경쓸것을 상기하고 칸에 맞게 들여쓰기 진행
       
 ### **📁 증빙 자료:**
-  * [2차_AI협업캡처.pdf 첨부 완료] (첨부 후 링크)
-  * [2차과제_실행결과.jpg]
+  * https://github.com/MJU-PY-2026-1/mju-py-homework-kimkuno1026/blob/main/2%EC%B0%A8_AI%ED%98%91%EC%97%85%EC%BA%A1%EC%B3%90.pdf
+  * https://github.com/MJU-PY-2026-1/mju-py-homework-kimkuno1026/blob/main/2%EC%B0%A8%EA%B3%BC%EC%A0%9C_%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC.pdf
 <br>
 
 ## 🟨 [3차 과제: V3.0] 무한 루프와 메뉴 시스템 (반복문) - 향후 작성 예정
