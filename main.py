@@ -20,7 +20,7 @@ print(f"보유원화:{budget_krw}원, 적용 환율{exchange_rate}")
 print(f"항공료&비자 제외,일본에서 사용할수 있는 총 엔화는 {total_jpy:.0f}엔입니다.")
 print("-"*40)
 
-#
+#지출 계산 카테고리
 expense_items = [] 
 print(f"월세를 제외한 일본에서 가장 돈이 많이 들것 같은 항목 3개를 입력하세요.")
 for i in range(3):
