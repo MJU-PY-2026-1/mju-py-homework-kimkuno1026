@@ -42,8 +42,8 @@ else :
   grade = "위험"
   msg = "초기 자금을 더 확보 할 것을 권장합니다"
 
-#체류 기간 고려한 예산 등급 판정
 
+#체류 기간 고려한 예산 등급 판정
 if grade == "안정" or grade == "보통" :
   if stay_months >= 6 and budget_krw >0 :
     advide = "자금 여유가 있으니 일본을 즐기며 알바를 시작하세요"
@@ -54,7 +54,7 @@ else :
 
 print(f"종합 등급:{grade},{msg}")
 print(f"가이드의 조언:{advide}")
-
+print("-"*40)
 
   
     
