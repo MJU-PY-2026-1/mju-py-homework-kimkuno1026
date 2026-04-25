@@ -8,7 +8,7 @@ exchange_rate = float(input("금일 엔화 환율을 입력하세요 (예:9.1): 
 flight_fee = int(input("항공권 결제 금액(KRW)를 입력하세요: "))
 stay_months = int(input("일본에 체류할 예정인 개월 수를 입력하세요: "))
 
-total_jpy = (budget_krw - flight_fee) / exchange_rate * 100 
+total_jpy = ((budget_krw - flight_fee) / exchange_rate) * 100 
 
 print("-"*40)
 print(f"{name}님의 워홀 초기 비용 분석입니다!")
