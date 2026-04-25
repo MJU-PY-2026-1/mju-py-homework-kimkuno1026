@@ -25,6 +25,10 @@ expense_items = []
 print(f"월세를 제외한 일본에서 가장 돈이 많이 들것 같은 항목 3개를 입력하세요.")
 for i in range(3):
   item = input(f"{i+1}번째 항목: ")
+  if item == "" :
+    print("공백은 입력 할수 없습니다.다시 입력해주세요")
+    continue
+    
   expense_items.append(item)
 
 expense_items.sort()
