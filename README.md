@@ -37,11 +37,7 @@
       환율연산의 공식, 목돈에서 비행기 표&집세 등을 빼기, 목돈을 어떻게 나누어 쓸지등의 연산 코드의 예시를 알려줌, 출력을 진행 할때f-string 사용까지 알려주어 1차과제의 틀을 구성하고 복습도 되는 좋은 질의응답이였다.
     
 ### **📁 증빙 자료:**
-  *<img width="1633" height="944" alt="스크린샷 2026-04-04 134547" src="https://github.com/user-attachments/assets/b4b6e673-7578-4ddc-8967-109309b85169" />
-  *<img width="1115" height="964" alt="스크린샷 2026-04-04 134602" src="https://github.com/user-attachments/assets/e28b264d-e8aa-4638-a85e-af469b38712d" />
-  *<img width="1061" height="1004" alt="스크린샷 2026-04-04 134613" src="https://github.com/user-attachments/assets/e6bee286-aed6-4378-a3de-b56a31dae303" />
-  *<img width="1267" height="1224" alt="스크린샷 2026-04-04 141024" src="https://github.com/user-attachments/assets/a681b7d7-3346-452a-b2af-f30e58d093e1" />
-  *<img width="1058" height="996" alt="스크린샷 2026-04-04 141039" src="https://github.com/user-attachments/assets/ee1d4c14-1f83-4c96-96bc-6ec2f3db737c" />
+    * https://github.com/MJU-PY-2026-1/mju-py-homework-kimkuno1026/blob/main/1%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20AI%E1%84%92%E1%85%A7%E1%86%B8%E1%84%8B%E1%85%A5%E1%86%B8%20%E1%84%8F%E1%85%A2%E1%86%B8%E1%84%8E%E1%85%A7.pdf.pdf
 
 <br>
 
