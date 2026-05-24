@@ -64,6 +64,7 @@ print(f"종합 등급:{grade},{msg}")
 print(f"가이드의 조언:{advice}")
 print("-"*40)
 
+안녕하세요
   
     
     
