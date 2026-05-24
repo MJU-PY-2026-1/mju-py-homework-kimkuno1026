@@ -64,7 +64,89 @@ print(f"종합 등급:{grade},{msg}")
 print(f"가이드의 조언:{advice}")
 print("-"*40)
 
-안녕하세요
+#3차 과제.
+#전역 변수 선언
+hourly_wage = 0
+working_hours_per_week = 0
+
+#함수1 알바 근무 정보 입력
+def input_job_conditions():
+  global hourly_wage, working_hours_per_week
+  print("일본 현지 아르바이트 정보을 입력합니다.")
+  hourly_wage = int(input("알바 시급(엔)을 입력하세요."))
+  working_hours_per_week = int(input("주일당 근무 시간을 입력하세요."))
+  print("아르바이트 정보가 성공적으로 등록 되었습니다.")
+
+#함수2 예상 월급 계산
+def calculate_monthly_income():
+  monthly_income = hourly_wage * working_hours_per_week * 4
+  return monthly_income
+
+#함수3 목표 저축액 가능여부 분석
+def analyze_saving_possibillity(calculated_income):
+  print(f"\n{'='*10}{name}님의 현지 월급 및 저축 분석{'='*10}")
+  print(f"예상 월수입: 약{calculated_income:,.0f}엔")
+
+  goal_saving = int(input("한 달에 저축하고 싶은 목표 금액(엔)을 입력하세요: "))
+
+  #일본 워홀러 평균 최소 생활비(야칭 포함) 120000엔 설정
+  living_cost = 120000
+  available_money = calculated_income - living_cost
+
+  if available_money >= goal_saving:
+    print(f"저축 가능합니다! 생활비({living_cost:,}엔)와 목표 저축액({goal_saving:,}엔)을 모두 충당할 수 있습니다.") 
+
+  else :
+    shortage = goal_saving - available_money
+    print(f"보완이 필요합니다. 현재 계획으로는 목표액보다 약{shortage:,.0f}엔이 부족합니다.")
+
+  print("="*50)
+
+print("\n초기 정착 분석이 완료되었습니다.이어서 현지 수입/저축 관리를 시작합니다")
+
+while True:
+  print("\n" + "="*15 + "워홀 현지 경제 시뮬레이터" + "="*15)
+  print("1. 알바 정보 입력")
+  print("2. 예상 월수입 확인")
+  print("3. 목표 적축액 달성 분석")
+  print("4. 종료")
+  print("="*55)
+
+  menu_choice = input("원하는 메뉴 번호를 선택하세요: ").strip()
+
+  if menu_choice == "1":
+    input_job_conditions()
+
+  elif menu_choice == "2":
+    if hourly_wage == 0:
+      print("[경고] 1번 메뉴에서 알바 정보를 먼저 입력해주세요.")
+      continue
+
+    my_monthly_income = calculate_monthly_income()
+    print(f"\n {name}님의 예상 월수입은 총[{my_monthly_income:,.0f}엔]입니다.")
+
+  elif menu_choice == "3":
+    if hourly_wage ==0:
+      print("[경고] 1번 메뉴에서 알바 정보를 먼저 입력해주세요.")
+      continue
+
+    my_monthly_income = calculate_monthly_income()
+    analyze_saving_possibillity(my_monthly_income)
+
+  elif menu_choice =="4":
+    print("프로그램을 종료합니다")
+    break
+
+  else:
+    print("올바른 번호(1~4)를 입력해주세요. ")
+
+
+    
+      
+
+
+
+
   
     
     
