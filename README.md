@@ -96,7 +96,7 @@
      * **해결:** elif 들여쓰기 맞추어 진행.저번에도 똑같은 실수를 했는데 또 하고 말았다.다시한번 상기하며 코딩을 이어갔다
      
 ### **📁 증빙 자료:**
-  * https://github.com/user-attachments/files/28192824/3._Ai.pdf
+  * [https://github.com/user-attachments/files/28192824/3._Ai.pdf](https://github.com/MJU-PY-2026-1/mju-py-homework-kimkuno1026/blob/main/3%EC%B0%A8_Ai%ED%98%91%EC%97%85%EC%BA%A1%EC%B2%98.pdf)
   * [3차과제_실행결과.jpg]
 <br>
 
