@@ -140,6 +140,99 @@ while True:
   else:
     print("올바른 번호(1~4)를 입력해주세요. ")
 
+#4차 과제
+worholder_matrix = [ 
+  ["김철수",1200,25,12000],
+  ["이영희",1150,28,12880]
+]
+
+print("\n" +"="*10 + "워홀러 현황판 및 파일 시스템" + "="*10)
+
+while True:
+  print("1.새로운 워홀러 알바 정보 등록")
+  print("2.전체 워홀러 현황 출력")
+  print("3.현황 데이터를 파일로 저장")
+  print("4.프로그램 종료")
+  print("="*50)
+
+  try:
+    menu_input = input("원하는 메뉴 번호를 입력하세요: ").strip()
+    menu_choice = int(menu_input)
+  except ValueError:
+    print("[입력 오류] 숫자로 된 메뉴 번호를 입력해주세요.")
+    continue
+
+  if menu_choice ==1:
+    print("\n---새로운 워홀러의 알바 정보를 등록합니다---")
+    new_name = input("워홀러의 이름을 입력하세요: ").strip()
+
+    try:
+      new_wage = int(input("알바 시급(엔)을 입력하세요: "))
+      new_hours = int(input("주일당 근무 시간을 입력하세요: "))
+    except ValueError:
+      print("[입력 오류] 시급과 근무시간은 정수(숫자)로만 입력해야합니다. 처음부터 다시 시도하세요")
+      continue
+  
+    new_income = new_wage * new_hours *4
+  
+    worholder_matrix.append([new_name, new_wage, new_hours,new_income])
+    print(f"{new_name}님의 데이터가 이중 리스트에 성공적으로 누적되었습니다")
+
+  elif menu_choice == 2:
+    print("\n" + "="*15 + "일본 워홀러 알바 현황판" "="*15)
+    print(f"{"이름":}\t{"시급(엔)":}\t{"주당시간":}\t{"예상월급(엔)"}")
+    print("="*55)
+
+    for row in worholder_matrix:
+      for i in range(len(row)):
+        if i ==2 or i ==3:
+          print(f"{row[i]:,}\t",end="")
+                
+        else:
+          print(f"{row[i]}\t",end="")
+
+      print()
+    print("="*55)
+
+  elif menu_choice == 3:
+    print("\n--- 데이터를 파일로 저장합니다 ---")
+    filename = "worholder_status.txt"
+
+    try:
+      with open(filename, "w", encoding="utf-8") as file:
+        file.write("이름,시급,주당근무시간,예상월급\n")
+        for i in range(len(worholder_matrix)):
+          name_data = worholder_matrix[i][0]
+          wage_data = worholder_matrix[i][1]
+          hours_data = worholder_matrix[i][2]
+          income_data = worholder_matrix[i][3]
+          file.write(f"{name_data},{wage_data},{income_data}\n")
+      print(f"[완료] 데이터가 {filename} 파일로 저장되었습니다")
+      print(f"\n--- 저장된 파일의 정상 기록 여부를 검증 합니다---")
+      with open(filename, "r", encoding="utf-8") as file:
+        lines = file.readlines()
+        print(f"[검증 성공] 현재 파일에 백업된 데이터 행 수:{len(lines) -1}개")
+        
+
+    except FileNotFoundError:
+      print("[파일 오류] 지정된 파일이 디스크에 존재하지 않거나 찾을 수 없습니다")
+
+    except Exception :
+      print("[시스템 오류] 파일 처리 중 예상치 못한 오류가 발생했습니다")
+
+  elif menu_choice ==4:
+    print("전체 프로그램을 종료합니다. 늘 응원하겠습니다")
+    break
+
+  else:
+    print("올바른 메뉴 번호(1~4)를 선택해주세요")
+              
+
+
+                
+
+  
+
 
     
       
